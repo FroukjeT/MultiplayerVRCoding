@@ -2,7 +2,7 @@
 - Project name: MultiplayerVRCoding
 - Unity version: Unity 6000.2.6f2
 - Active game object:
-  - Name: NoHat
-  - Tag: Untagged
-  - Layer: UI
+  - Name: Main Camera
+  - Tag: MainCamera
+  - Layer: Default
 <!-- UNITY CODE ASSIST INSTRUCTIONS END -->
