@@ -18,6 +18,10 @@ public class NetworkedLightSwitch : RealtimeComponent<LightSwitchModel> //networ
 
         if (currentModel != null) //then: if we have a new model)
         {
+            //if this mode is brand new in the rooom (so first client), instantialise the network value from whatever ht elight currently is (so make sure it starts with on)
+            if(currentModel.isFreshModel)
+                currentModel.isOn = targetLight != null && targetLight.enabled; 
+
             Apply(currentModel.isOn);
             //register for events so we'll know if the value changes later
             currentModel.isOnDidChange += OnLightChanged;
