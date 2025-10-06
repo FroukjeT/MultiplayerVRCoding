@@ -5,7 +5,7 @@ public class SlidingDoor : MonoBehaviour
     [Header("Settings")]
     public float openLimit = 1f;
     public float speed = 2f;
-    bool isOpen = false;
+    public bool isOpen = false;
 
     void Update()
     {
